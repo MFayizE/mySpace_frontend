@@ -1,0 +1,32 @@
+.sidebar{
+    display:inline-block;
+    text-align:center;
+}
+.buttonsPanel{
+    text-align:left;
+    padding-left: 25px;
+}
+.btnColor{
+    color: #B3B6BC;
+    border: 0px solid #B3B6BC;
+}
+.btnColor:hover{
+    color: #FDFEFF;
+    border: 0px solid #FDFEFF;
+}
+
+.logo{
+    width: 120px
+}
+.active{
+    color: #FDFEFF;
+    border: 0px solid #FDFEFF;
+}
+.profile{
+    color: #FDFEFF;
+    font-weight: 500;
+    img{
+        border-radius: 40px;
+        width: 70px;
+    }
+}

@@ -1,0 +1,42 @@
+<div class="container sidebar">
+    <div>
+        <div class="mb-5 mt-2">
+            <img class="logo" src="assets/mySpaceLOGOWhite.png" alt="">
+        </div>
+        <div class="profile mb-5">
+            <img src="assets/profilepic.jpg" alt="">
+            <p class="mt-2">{{respectiveUser?.name}}</p>
+        </div>
+        <div class="buttonsPanel" >
+        <button class="btn btnColor mt-2" routerLink="" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
+            <i class="bi bi-house"></i> Dashboard
+        </button>
+        <div>
+            <button class="btn btnColor mt-2" routerLink="contacts" routerLinkActive="active">
+                <i class="bi bi-person-rolodex"></i> Contact
+            </button>
+        </div>
+        <div>
+            <button class="btn btnColor mt-2" routerLink="news" routerLinkActive="active">
+                <i class="bi bi-newspaper"></i> News
+            </button>
+        </div>
+        <div>
+            <button class="btn btnColor mt-2">
+                <i class="bi bi-journal-text"></i> Notes
+            </button>
+        </div>
+        <div>
+            <button class="btn btnColor mt-2">
+                <i class="bi bi-list-check"></i> To-Do List
+            </button>
+        </div>
+        <div>
+            <button class="btn btnColor mt-2">
+                <i class="bi bi-person-workspace"></i> Available Jobs
+            </button>
+        </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+    <div class="col-3">
+        <select class="form-select p-3  mt-3"  [(ngModel)]="currentCountry" (change)="fetchList(currentCountry)">
+            <option *ngFor="let code of names" [value]="code.code">{{code.name}}</option>
+          </select>
+    </div>
+</div>
+
+
+<section class="container p-5">
+    <div class="row gx-4 gx-lg-5 row-cols-3 row-cols-md-3 row-cols-xl-3 justify-content-center" *ngIf="pageLoader">
+        <div class="col cardData  mb-5" *ngFor="let data of [1,1,1,1,1,1,1,1,1,1,1,1]" >
+            
+            <div class="card data-loading h-30 shadow">
+                <div class="data-loading h-70 card-body loadingbody p-4">
+                    <div class="">
+                        <h5 class=" data-loading fw-bolder main"></h5>
+                        <h6 class="data-loading fw-bolder main"></h6>
+                        <h6 class="data-loading sec"></h6>
+                        <h6 class="data-loading sec"></h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center" *ngIf="!pageLoader">
+        <div class="col cardData mb-5 "  *ngFor="let item of newsList">
+            <a [href]="item?.url" target="_blank">
+            <div class="card h-100 shadow "  >
+                <div class="container mt-2">
+                <img [src]="item?.urlToImage!=null ? item?.urlToImage : 'assets/news.jpg' " class="card-img-top image" alt="..."></div>
+                <div class="card-body">
+                  <h6 class="card-title main my-2">{{item?.title}}</h6>
+                  <p class="card-text sec mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </a>
+        </div>
+        
+    </div>
+</section>

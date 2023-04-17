@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="box mt-5">
+        <div class="d-flex justify-content-between">
+            <div class="details ">
+                <div class="mt-5 p-5">
+                <h2>Login</h2>
+                <p>If You are already a member, Easily Log In</p>
+                <form [formGroup]="loginForm" class="mt-5">
+                    <input class="form-control" type="text" formControlName="email" placeholder="Email"> <br>
+                    <input  class="form-control" type="text" formControlName="password" placeholder="Password">
+                
+                <button class="btn btnColor mt-5 mb-5" (click)="proceedLogin()">
+                    Login
+                </button>
+                <div class="link mt-5">
+                <p>Don't have an account yet? <a routerLink="/register"> <span>Try for free!</span> </a></p></div>
+            </form>
+            </div>
+            </div>
+            <div class="image p-3">
+                <img src="../../../assets/background.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="box mt-5">
+        <div class="d-flex justify-content-between">
+            <div class="image p-3">
+                <img src="../../../assets/background.jpg" alt="">
+            </div>
+            <div class="details ">
+                <div class="mt-2 p-5">
+                <h2>Sign Up</h2>
+                <p>Create account to start using MySpace</p>
+                <form [formGroup]="RegisterForm" class="mt-5">
+                    <input class="form-control" type="text" formControlName="name" placeholder="Name"> <br>
+                    <input class="form-control" type="text" formControlName="email" placeholder="Email"> <br>
+                    <input  class="form-control" type="text" formControlName="password" placeholder="Password"> <br>
+                    <input  class="form-control" type="text" formControlName="confirmpassword" placeholder="Confirm Password">
+
+                
+                <button class="btn btnColor mt-5 " (click)="proceedRegister()">
+                    Register
+                </button>
+                <div class="link mt-5">
+                    <p>Already have an account? <a routerLink="/login"> <span>Sign In!</span> </a></p></div>
+            </form>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

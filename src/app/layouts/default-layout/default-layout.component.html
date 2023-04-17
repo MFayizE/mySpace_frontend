@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+<mat-sidenav #sidebar mode="side" opened>
+<app-sidebar></app-sidebar>
+</mat-sidenav>
+<mat-sidenav-content>
+    <div class="content">
+        <div class="toolbar">
+            <mat-toolbar class="d-flex justify-content-between">
+                <mat-icon (click)="sidebar.toggle()">
+                    menu
+                </mat-icon>
+                <i class="bi bi-door-open-fill logoutIcon" (click)="signOut()"></i>
+            </mat-toolbar>
+        </div>
+        <div class="main">
+           <router-outlet></router-outlet>
+        </div>
+    </div>
+</mat-sidenav-content>
+</mat-sidenav-container>

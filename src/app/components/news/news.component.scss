@@ -1,0 +1,35 @@
+.card{
+    border-radius: 25px;
+    background-color: #4D4E8C;
+    border: 0px solid;
+    transition: transform 450ms;
+   
+    .image{
+        border-radius: 25px;
+    }
+    .main{
+        color: #FDFEFF;
+    }
+    .sec{
+        color: #d1ded8;
+        font-size: small;
+    }
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.end{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.loadingbody{
+    height: 370px;
+  }
